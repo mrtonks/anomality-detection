@@ -1,4 +1,10 @@
 # Anomality Detection with Apache Flink
+## Requirements
+This project was built using the following software:
+- Java/OpenJDK 1.8
+- Apache Flink 1.9.1
+- Apache Maven 3.3.9 
+- Docker 19.03
 
 ## Getting started
 The following steps are required in order to get the docker image, run the project and store the results in InfluxDB.
