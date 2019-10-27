@@ -30,11 +30,10 @@ The following steps are required in order to get the docker image, run the proje
    - Enter the path to Flink binaries folder when prompted (`my/path/to/flink/bin`).
    - Enter the path to the JAR file when prompted (`my/path/to/myjar.jar`).
    - A browser window will open with the **Dispatcher's web front end** at http://localhost:8081.
-7. Using the last terminal or in a new terminal stop the cluster by running:
+7. Using the last terminal or in a new terminal stop the cluster by running*:
    ```bash
    $ /my/path/to/flink/bin/stop-cluster.sh
    ```
-   - **Note**: replace `/my/path/to/flink` with the path to your Apache Flink folder
    - Run only after you're done with the other tasks or reviewing the results.
 
 Please, note that you can use Ctrl-C to end any task.
@@ -55,14 +54,14 @@ In order to run the project manually, go through steps 1 to 4 from **Getting sta
       -v "$PWD":/var/lib/influxdb \
       influxdb
    ```
-2. Open another terminal and navigate to the project folder, then run:
+2. Open another terminal and navigate to the project folder, then run*:
    ```bash
    $ /my/path/to/flink/bin/start-cluster.sh
    
    $ /my/path/to/flink/bin/flink run my/path/to/myjar.jar --port 9000
    ```
-   - **Note**: replace `/my/path/to/flink` with the path to your Apache Flink folder
-3. Using the last terminal or in a new terminal stop the cluster by running:
+3. Using the last terminal or in a new terminal stop the cluster by running*:
    ```bash
    $ /my/path/to/flink/bin/stop-cluster.sh
    ```
+***Note**: replace `/my/path/to/flink` with the path to your Apache Flink folder
