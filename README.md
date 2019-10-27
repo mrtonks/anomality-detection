@@ -28,6 +28,7 @@ The following steps are required in order to get the docker image, run the proje
     ```
    - Enter the path to Flink binaries folder when prompted (`my/path/to/flink/bin`).
    - Enter the path to the JAR file when prompted (`my/path/to/myjar.jar`).
+   - A browser window will open with the **Dispatcher's web front end** at http://localhost:8081.
 7. Using the last terminal or in a new terminal stop the cluster by running:
    ```bash
    /my/path/to/flink/bin/stop-cluster.sh
