@@ -1,4 +1,7 @@
 #!/bin/bash
+# This script will pull the InfluxDB docker image and initialize the database
+# with a default name db_anomalies. Then, it will run the container.
+
 echo "Pulling InfluxDB from Docker..."
 docker pull influxdb
 

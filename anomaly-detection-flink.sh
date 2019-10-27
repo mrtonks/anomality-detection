@@ -1,4 +1,7 @@
-# Require from the user Apache Flink binary folder and the JAR file locations
+#!/bin/bash
+# This script will ask the user the necesary parameters for the project to run.
+# Then it will run the FLink program.
+
 response=
 echo -n "Enter FLINK binary path [my/path/to/flink/bin] > "
 read -r response
@@ -14,6 +17,8 @@ if [ -n "$response" ]; then
 fi
 
 "${FLINKPATH}/start-cluster.sh"
+echo "Opening Dispatcher's web fron end at http://localhost:8081."
+x-www-browser http://localhost:8081
 echo "Submitting the Flink program..."
 "${FLINKPATH}/flink" run "$JARPATH" --port 9000
 echo "Done!"
