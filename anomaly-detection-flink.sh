@@ -17,7 +17,7 @@ if [ -n "$response" ]; then
 fi
 
 "${FLINKPATH}/start-cluster.sh"
-echo "Opening Dispatcher's web fron end at http://localhost:8081."
+echo "Opening Dispatcher's web front-end at http://localhost:8081."
 x-www-browser http://localhost:8081
 echo "Submitting the Flink program..."
 "${FLINKPATH}/flink" run "$JARPATH" --port 9000
